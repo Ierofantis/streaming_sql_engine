@@ -1585,6 +1585,9 @@ For cross-system data integration, the Streaming SQL Engine provides a unique so
 ## Resources
 
 - **PyPI:** `pip install streaming-sql-engine`
-- **Scientific Paper:** Comprehensive performance evaluation and architecture details available in `SCIENTIFIC_PAPER.md` (Paper Version: 1.0, 2026)
+- **Bug Reports:** `"https://github.com/Ierofantis/streaming_sql_engine/issues"`,
+- **Source":** `"https://github.com/Ierofantis/streaming_sql_engine/"`,
+- **Documentation":** `"https://github.com/Ierofantis/streaming_sql_engine/blob/master/README.md"`,
+- **Scientific Paper":** `"https://github.com/Ierofantis/streaming_sql_engine/blob/master/Streaming_SQL_Engine_Paper.pdf"`
 
 ---
