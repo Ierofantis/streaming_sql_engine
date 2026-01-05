@@ -1,0 +1,7 @@
+{"product_id": 1, "name": "Laptop", "category": "Electronics", "stock": 50, "checked": 1}
+{"product_id": 2, "name": "Mouse", "category": "Electronics", "stock": 200, "checked": 1}
+{"product_id": 3, "name": "Keyboard", "category": "Electronics", "stock": 150, "checked": 0}
+{"product_id": 4, "name": "Monitor", "category": "Electronics", "stock": 75, "checked": 1}
+{"product_id": 5, "name": "Headphones", "category": "Audio", "stock": 100, "checked": 1}
+{"product_id": 6, "name": "USB Cable", "category": "Accessories", "stock": 500, "checked": 0}
+

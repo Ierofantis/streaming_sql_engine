@@ -1,0 +1,7 @@
+{"order_id": 101, "user_id": 1, "product": "Laptop", "price": 999.99, "quantity": 1}
+{"order_id": 102, "user_id": 1, "product": "Mouse", "price": 29.99, "quantity": 2}
+{"order_id": 103, "user_id": 2, "product": "Keyboard", "price": 79.99, "quantity": 1}
+{"order_id": 104, "user_id": 3, "product": "Monitor", "price": 299.99, "quantity": 1}
+{"order_id": 105, "user_id": 5, "product": "Headphones", "price": 149.99, "quantity": 1}
+{"order_id": 106, "user_id": 1, "product": "USB Cable", "price": 9.99, "quantity": 3}
+

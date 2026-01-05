@@ -165,8 +165,6 @@ cython_debug/
 .\#*
 
 # Project-specific
-test_data/*.jsonl
-*.pdf
 *.log
 
 # Temporary files
