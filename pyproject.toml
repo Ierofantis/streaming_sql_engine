@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streaming-sql-engine"
+version = "0.1.30"
+description = "Streaming SQL Engine: Lightweight Cross Data Source Integration for Resource Constraint Environments"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Ierofantis", email = "teopanta1986@gmail.com"}
+]
+keywords = ["sql", "streaming", "join", "database", "query", "engine", "etl", "data-integration"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Database",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "sqlglot>=23.0.0",
+    "polars>=0.19.0",  # Optional: Required only when use_polars=True
+]
+
+[project.optional-dependencies]
+# Polars is now a required dependency (moved to dependencies above)
+db = [
+    "psycopg2-binary>=2.9.0",
+    "pymysql>=1.0.0",
+    "DBUtils>=3.0.0",
+    "pymongo>=4.0.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+]
+all = [
+    "psycopg2-binary>=2.9.0",
+    "pymysql>=1.0.0",
+    "DBUtils>=3.0.0",
+    "pymongo>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ierofantis/streaming_sql_engine/"
+Repository = "https://github.com/Ierofantis/streaming_sql_engine/"
+Issues = "https://github.com/Ierofantis/streaming_sql_engine/issues"
+Documentation = "https://github.com/Ierofantis/streaming_sql_engine/blob/master/README.md"
+Scientific-Paper = "https://github.com/Ierofantis/streaming_sql_engine/blob/master/Streaming_SQL_Engine_Paper.pdf"
+
+[tool.setuptools]
+packages = ["streaming_sql_engine", "streaming_sql_engine.core", "streaming_sql_engine.operators", "streaming_sql_engine.polars_utils", "streaming_sql_engine.storage"]
+package-dir = {"streaming_sql_engine" = "."}
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt"]
+

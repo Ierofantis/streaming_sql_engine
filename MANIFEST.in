@@ -1,0 +1,14 @@
+include README.md
+include requirements.txt
+recursive-include streaming_sql_engine *.py
+recursive-exclude test *
+recursive-exclude test_data *
+recursive-exclude build *
+recursive-exclude dist *
+recursive-exclude *.egg-info *
+recursive-exclude __pycache__ *
+recursive-exclude *.pyc *
+global-exclude setup.py
+global-exclude *.pyc
+global-exclude __pycache__
+

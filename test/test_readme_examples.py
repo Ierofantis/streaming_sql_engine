@@ -10,7 +10,7 @@ from pathlib import Path
 
 # Set up package structure for relative imports to work
 package_name = 'streaming_sql_engine_code'
-package_dir = Path(__file__).parent
+package_dir = Path(__file__).parent.parent  # Go up one level to package root
 parent_dir = package_dir.parent
 
 if str(parent_dir) not in sys.path:
@@ -47,7 +47,7 @@ Engine = pkg.Engine
 
 def load_jsonl(filename):
     """Load JSONL file and return iterator of dictionaries."""
-    filepath = Path(__file__).parent / "test_data" / filename
+    filepath = Path(__file__).parent.parent / "test_data" / filename
     with open(filepath, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
@@ -314,8 +314,8 @@ def main():
         {"use_polars": False, "debug": False},
         6,  # Should work same as regular join
         {"users": jsonl_source_users, "orders": jsonl_source_orders, 
-         "users_filename": str(Path(__file__).parent / "test_data" / "users.jsonl"), 
-         "orders_filename": str(Path(__file__).parent / "test_data" / "orders.jsonl")}
+         "users_filename": str(Path(__file__).parent.parent / "test_data" / "users.jsonl"), 
+         "orders_filename": str(Path(__file__).parent.parent / "test_data" / "orders.jsonl")}
     ))
     
     # ===== REAL-WORLD EXAMPLES =====
