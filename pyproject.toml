@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "streaming-sql-engine"
-version = "0.1.30"
+version = "0.1.31"
 description = "Streaming SQL Engine: Lightweight Cross Data Source Integration for Resource Constraint Environments"
 readme = "README.md"
 requires-python = ">=3.8"

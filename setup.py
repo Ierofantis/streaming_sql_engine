@@ -19,7 +19,7 @@ except FileNotFoundError:
 
 setup(
     name="streaming-sql-engine",
-    version="0.1.30",
+    version="0.1.31",
     author="Ierofantis",
     author_email="teopanta1986@gmail.com",
     description="Streaming SQL Engine: Lightweight Cross Data Source Integration for Resource Constraint Environments",
